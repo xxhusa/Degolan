@@ -1,4 +1,57 @@
-ola mundo
-tudo bem com vcs ?
-eu estou otimo
-estou mal 
+delta=  a B ao quadrado - 4. a. c
+12x^2+5x+10 =0
+A=12
+B+5
+C=10
+
+vai isolar o o x= x^2
+
+X= -B +- raiz quadrada de delta divido por 2*A
+
+se o valor de delta for (delta>0) a equação tera duas raizes
+
+se ao contratio (delta<0) a equação nao apresentara raizes reais.
+
+e se (delta = 0) a equação apresentara somente uma raiz
+
+25-4*12*10=25-480=-455
+
+
+
+	if (delta < 0) {
+		print("Não ha raizes reais;\n");
+	} else if (delta == 0) {
+		x1 = (-b + sqrt(delta)) / (2 * a);
+		printf("a raiz real repetida é: %.2f\n", x1);
+	} else { 
+		x1 = (-b + sqrt(delta)) / (2 * a);
+		x2 = (-b - sqrt(delta)) / (2 * a);
+		printf("As raizes são: %.2f e %.2f\n", x1, x2);
+	}
+	return 0;
+
+
+char opcao;
+
+while (1) { // Cria um loop infinito que só será interrompido pelo comando break
+        printf("\nMenu:\n");
+        printf("1. Continuar\n");
+        printf("2. Sair\n");
+        printf("Escolha uma opção: ");
+        scanf(" %c", &opcao); // Lê a opção do usuário
+
+	switch (opcao) {
+		case '1':
+			printf("continuando...\n");
+			colocar o codigo do programa//
+			break;
+		
+		case '2':
+			printf("saindo...\n");
+			exit(0); // encerra o programa
+			break;
+		defaut:
+			printf("opcao invalida.\n);
+		}
+	
+	
