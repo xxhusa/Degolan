@@ -76,3 +76,47 @@ float a, b, c, delta, x1, x2;
 		printf("As raizes sao: %.2f e %.2f\n", x1, x2);
 	}
 	
+
+
+
+
+int main()
+{
+	int continuar=1;
+	
+	do
+	{
+		printf("\n Chat doido\n");
+		printf("1. Oi\n");
+		printf("2. Tudo bem!\n");
+		printf("3. Como vai a familia\n");
+		printf("0. Sair\n");
+		
+		scanf("%d", &continuar);
+		system("cls ||  clear");
+		
+		switch(continuar)
+		{
+			case 1:
+				oi();
+				break;
+			
+			case 2:
+				tudo_bem();
+				break;
+				
+			case 3:
+				familia();
+				break;
+			
+			case 0:
+				sair();
+				break;
+			
+			defaut:
+				printf("digite uma opcao valida\n");
+						
+		}
+		
+	} while(continuar);
+}
