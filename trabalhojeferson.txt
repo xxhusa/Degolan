@@ -1,0 +1,110 @@
+historia da linguagem de programção C
+
+A linguagem C foi criada por Dennis Ritchie em 1972 para reescrever de forma portável o sistema operacional UNIX, que antes era escrito em assembly. Sua estrutura e seu nome provêm de uma linguagem anterior B, que era uma simplificação da linguagem de programação BCPL, escrita em 1966.
+
+motivação
+
+C é uma linguagem imperativa e procedural para implementação de sistemas. Seus pontos de design foram para ele ser compilado, fornecendo acesso irrestrito à memória e baixos requerimentos do hardware. Também foi desenvolvido para ser uma linguagem de alto nível, para maior reaproveitamento do código. C foi útil para muitas aplicações que foram codificadas originalmente em Assembly.
+Essa propriedade não foi acidental; a linguagem C foi criada com o objectivo principal em mente: facilitar a criação de programas extensos com menos erros recorrendo ao paradigma da programação procedural mas sobrecarregando menos o autor do compilador, cujo trabalho complica-se ao ter de realizar as características complexas da linguagem.
+
+utilização
+
+A linguagem de programação C é amplamente utilizada em uma variedade de aplicações, desde sistemas operacionais e sistemas embarcados até jogos e desenvolvimento de software de baixo nível. Ela é conhecida pela sua eficiência, portabilidade e capacidade de acesso direto ao hardware. 
+
+Principais Recursos da Linguagem C:
+
+Sintaxe Simples e Clara:
+C possui uma sintaxe relativamente simples e fácil de aprender, o que a torna uma linguagem popular para iniciantes. 
+Portabilidade:
+Os programas em C podem ser compilados e executados em diversas plataformas e arquiteturas diferentes. 
+Acesso de Baixo Nível à Memória:
+C permite aos programadores controlar a memória da máquina diretamente, o que é crucial para o desenvolvimento de sistemas embarcados e sistemas operacionais. 
+Biblioteca Padrão:
+A linguagem C possui uma rica biblioteca padrão com funções para entrada e saída, manipulação de strings, gerenciamento de memória, etc. 
+Funções e Estrutura:
+C utiliza funções para modularizar o código e a programação estruturada para organizar o desenvolvimento, promovendo a reutilização e o código mais legível. 
+Operadores Aritméticos e de Comparação:
+C oferece uma variedade de operadores aritméticos, como +, -, *, /, % e operadores de comparação para realizar cálculos e tomar decisões no código. 
+Estruturas e Unões:
+C permite definir estruturas para agrupar dados de diferentes tipos e unões para compartilhar o mesmo espaço de memória. 
+Ponteiros:
+C utiliza ponteiros para manipular endereços de memória, permitindo acesso e manipulação diretos da memória. 
+Processamento de Textos:
+C é muito boa para manipulação de strings e processamento de texto devido à sua flexibilidade na manipulação de dados. 
+Desenvolvimento de Sistemas:
+C é frequentemente usada no desenvolvimento de sistemas de baixo nível e em ambientes onde a eficiência é crucial, como sistemas operacionais e controladores de hardware. 
+Multithreading (Programação Concorrente):
+Embora C não tenha suporte nativo para multithreading, ele pode ser usado em conjunto com bibliotecas que oferecem essa funcionalidade. 
+
+Criação de variaveis
+
+char:
+Armazena caracteres individuais (letras, números, símbolos) e ocupa 1 byte de memória. Pode ser usado para representar caracteres ASCII. 
+int:
+Armazena números inteiros sem casas decimais. O tamanho em bytes pode variar dependendo do sistema, mas geralmente é de 2 ou 4 bytes. 
+float:
+Armazena números de ponto flutuante (reais) com precisão simples, geralmente ocupando 4 bytes de memória. 
+double:
+Armazena números de ponto flutuante com precisão dupla, geralmente ocupando 8 bytes de memória. 
+
+Estrutura de repetição
+
+1. for:
+Utilizada quando o número de repetições é conhecido ou pode ser definido com uma expressão.
+Possui três partes: inicialização, condição e atualização.
+Inicialização: Executada uma única vez no início do laço (normalmente para inicializar um contador).
+Condição: Avaliada a cada iteração. Se for verdadeira, o bloco de código dentro do laço é executado.
+Atualização: Executada no final de cada iteração (geralmente para atualizar o contador).
+
+2. while: 
+Executa um bloco de código enquanto uma condição for verdadeira.
+A condição é avaliada antes de cada execução do bloco de código.
+Se a condição for inicialmente falsa, o bloco de código nunca será executado.
+
+3. do...while: 
+Semelhante ao while, mas a condição é avaliada após a execução do bloco de código.
+Garante que o bloco de código seja executado pelo menos uma vez.
+
+vetores/arrays
+
+Estrutura de Dados:
+Um vetor é uma sequência de elementos do mesmo tipo, armazenados em posições consecutivas na memória. 
+
+Indexação:
+Cada elemento do vetor é acessado através de um índice numérico, que começa em 0. 
+
+Homogeneidade:
+Todos os elementos de um vetor devem ser do mesmo tipo (int, float, char, etc.). 
+
+Tamanho Fixo:
+O tamanho do vetor é definido no momento da declaração e não pode ser alterado durante a execução do programa. 
+
+alocação de memoria
+
+Em C, a alocação de memória pode ser estática ou dinâmica. A alocação estática ocorre quando a memória é alocada no momento da compilação, enquanto a alocação dinâmica acontece durante a execução do programa, permitindo que o programador aloque e libere memória conforme necessário. 
+
+Alocação Estática:
+
+Como funciona: A alocação estática é feita automaticamente pelo compilador, reservando um espaço de memória para variáveis locais, globais e estáticas.
+
+Alocação Dinâmica:
+
+Funções:
+
+A linguagem C fornece funções de biblioteca para alocação dinâmica de memória, principalmente malloc, calloc, realloc e free. 
+
+paradigmas de programação
+
+a linguagem C é predominantemente imperativa e estruturada.
+
+Programação Imperativa
+
+No paradigma imperativo, você diz ao computador como fazer as coisas. Ou seja, você escreve uma série de instruções que o computador deve seguir para executar uma tarefa. Em C, isso é feito através de comandos que manipulam estados do programa e variáveis.
+
+programação estruturada 
+
+A programação estruturada é um conceito que busca melhorar a clareza e a eficiência do código. Ela incentiva o uso de estruturas de controle como loops e condicionais. Isso ajuda a evitar o uso excessivo de goto, que pode tornar o código confuso.
+
+
+
+
