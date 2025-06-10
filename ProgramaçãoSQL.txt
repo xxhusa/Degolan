@@ -1,0 +1,48 @@
+Create database modelagem1;
+use modelagem1;
+
+create table gravadora(
+idgravadora int not null,
+endereco varchar(50),
+nome_gravadora varchar(45) not null,
+constraint PK_gravadora primary key (idgravadora)
+);
+
+create table CD(
+idCD int not null primary key,
+nome_cd varchar(45),
+preco decimal(10,2),
+data_lancamento date
+);
+
+create table MUSICA(
+id_MUSICA int not null PRIMARY KEY,
+NOME_MUSICA varchar(45),
+DURACAO DECIMAL(6.2)
+);
+
+create table FAIXA(
+idmusica int,
+idCD int,
+numero_faixa integer,
+constraint FK_musica foreign key (idmusica) REFERENCES MUSICA(id_musica),
+constraint FK_CD foreign key (idCD) references cd(idCD),
+constraint PK_faixa primary key (idmusica,idcd)
+);  
+
+create table autor(
+idautor integer not null PRIMARY KEY,
+NOME_autor varchar(45)
+);
+
+create table musica_autor(
+idmusica int,
+idautor int,
+constraint FK_musica2 foreign key (idmusica) REFERENCES MUSICA(id_musica),
+constraint FK_autor foreign key (idautor) references autor(idautor),
+constraint PK_musica_autor primary key (idmusica,idautor)
+);  
+
+
+
+select * from musica_autor;
