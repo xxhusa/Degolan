@@ -119,4 +119,10 @@ int main()
 		}
 		
 	} while(continuar);
-}
+
+
+
+comandos de mysql
+ALTER TABLE *clientes* DROP COLUMN *email*; // mudar a tabela e remover a coluna especificada
+
+ALTER TABLE *clientes* add column *atributo* e o *tipo de dado* // adicionar na coluna selecionada, a coluna, e especificar qual tipo de dado (VARCHAR,INT)
